@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row characters-list">
+    <div class="col-md-4" *ngFor="let charData of contentData">
+      <app-block [blockData]="charData" (click)="openModal(modalDiv, charData)"></app-block>
+    </div>
+  </div>
+</div>
+
+<ng-template #modalDiv let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{ modalContent.name }}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <ul>
+      <li><b>Height:</b> {{ modalContent.height }}</li>
+      <li><b>Mass</b> {{ modalContent.mass }}</li>
+      <li><b>Hair Color</b> {{ modalContent.hair_color }}</li>
+      <li><b>Skin Color</b> {{ modalContent.skin_color }}</li>
+      <li><b>Eye Color</b> {{ modalContent.eye_color }}</li>
+      <li><b>Birth Year</b> {{ modalContent.birth_year }}</li>
+      <li><b>Gender</b> {{ modalContent.gender }}</li>
+    </ul>
+  </div>
+</ng-template>
