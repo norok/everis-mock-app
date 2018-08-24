@@ -6,4 +6,8 @@
 
 .modal-header {
   background-color: $main-light;
+
+  .modal-title {
+    font-weight: bold;
+  }
 }

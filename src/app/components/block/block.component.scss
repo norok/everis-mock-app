@@ -3,8 +3,12 @@
 .block-comp {
   margin-bottom: 20px;
   cursor: pointer;
-
   background-color: $main-light;
+  transition: all 200ms ease-out 0s;
+
+  &:hover {
+    box-shadow: 3px 3px 10px rgba(#000, 0.2);
+  }
 }
 
 .card-title {
