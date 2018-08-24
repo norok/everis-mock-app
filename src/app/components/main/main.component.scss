@@ -1,3 +1,9 @@
+@import "../../../assets/variables";
+
 .characters-list {
   padding-top: 20px;
+}
+
+.modal-header {
+  background-color: $main-light;
 }

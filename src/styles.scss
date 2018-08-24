@@ -1,5 +1,13 @@
 @import '~node_modules/bootstrap/scss/bootstrap';
+@import 'assets/variables';
 
 body {
   font-family: "Open Sans", Roboto, Arial, sans-serif;
+  color: $main-dark;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

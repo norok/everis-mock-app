@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row characters-list">
-    <div class="col-md-4" *ngFor="let charData of contentData">
+    <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let charData of contentData">
       <app-block [blockData]="charData" (click)="openModal(modalDiv, charData)"></app-block>
     </div>
   </div>

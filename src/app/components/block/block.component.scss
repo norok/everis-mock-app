@@ -1,4 +1,16 @@
+@import "../../../assets/variables";
+
 .block-comp {
   margin-bottom: 20px;
   cursor: pointer;
+
+  background-color: $main-light;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 14px;
 }
